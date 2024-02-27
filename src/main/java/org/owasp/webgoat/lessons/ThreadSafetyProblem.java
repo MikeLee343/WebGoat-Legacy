@@ -80,7 +80,7 @@ public class ThreadSafetyProblem extends LessonAdapter
             currentUser = s.getParser().getRawParameter(USER_NAME, "");
 
             // ###
-            // originalUser = currentUser;
+            originalUser = currentUser;
 
             // Store the user name
             String user1 = new String(currentUser);
