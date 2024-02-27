@@ -78,6 +78,11 @@ public class ThreadSafetyProblem extends LessonAdapter
             ec.addElement(new StringElement("Enter user name: "));
             ec.addElement(new Input(Input.TEXT, USER_NAME, ""));
             currentUser = s.getParser().getRawParameter(USER_NAME, "");
+            
+            if (!currentUser.matches("^[a-zA-Z0-9]+$")) {
+                throw new IllegalArgumentException("Invalid user name.");
+            }
+            
             originalUser = currentUser;
 
             // Store the user name
