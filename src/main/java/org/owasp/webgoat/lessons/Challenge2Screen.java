@@ -97,7 +97,8 @@ public class Challenge2Screen extends SequentialLessonAdapter
      * Description of the Field
      */
     protected final static String MESSAGE = "Message";
-
+    protected final static String MESSAGE = "Message";
+    
     /**
      * Description of the Field
      */
